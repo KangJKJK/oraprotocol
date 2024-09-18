@@ -99,11 +99,11 @@ EOF
 echo -e "${YELLOW}해당 사이트에 방문하여 각각의 필요한 엔드포인트를 받으세요.${NC}"
 echo -e "${YELLOW}https://dashboard.alchemy.com/apps${NC}"
 echo
-read -p "${CYAN}EVM프라이빗 키를 입력하세요(노드전용 버너지갑): ${NC}" PRIV_KEY
-read -p "${CYAN}Ethereum 메인넷의 Alchemy WSS URL을 입력하세요: ${NC}" MAINNET_WSS
-read -p "${CYAN}Ethereum 메인넷의 Alchemy HTTP URL을 입력하세요: ${NC}" MAINNET_HTTP
-read -p "${CYAN}Sepolia Ethereum의 Alchemy WSS URL을 입력하세요: ${NC}" SEPOLIA_WSS
-read -p "${CYAN}Sepolia Ethereum의 Alchemy HTTP URL을 입력하세요: ${NC}" SEPOLIA_HTTP
+read -p "$(echo -e ${CYAN}EVM프라이빗 키를 입력하세요\(노드전용 버너지갑\): ${NC})" PRIV_KEY
+read -p "$(echo -e ${CYAN}Ethereum 메인넷의 Alchemy WSS URL을 입력하세요: ${NC})" MAINNET_WSS
+read -p "$(echo -e ${CYAN}Ethereum 메인넷의 Alchemy HTTP URL을 입력하세요: ${NC})" MAINNET_HTTP
+read -p "$(echo -e ${CYAN}Sepolia Ethereum의 Alchemy WSS URL을 입력하세요: ${NC})" SEPOLIA_WSS
+read -p "$(echo -e ${CYAN}Sepolia Ethereum의 Alchemy HTTP URL을 입력하세요: ${NC})" SEPOLIA_HTTP
 
 # .env 파일 생성
 show "${BLUE}.env 파일을 생성합니다...${NC}"
