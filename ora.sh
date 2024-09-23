@@ -95,6 +95,14 @@ networks:
     driver: bridge
 EOF
 
+#필요한 포트 개방
+sudo apt update && sudo apt install -y ufw
+sudo ufw enable
+sudo ufw allow ssh
+sudo ufw allow 20
+sudo ufw allow 6379
+sudo ufw allow 5000
+
 # 사용자로부터 프라이빗 키와 각종 URL 입력 받기
 echo -e "${YELLOW}해당 사이트에 방문하여 각각의 필요한 엔드포인트를 받으세요.${NC}"
 echo -e "${YELLOW}https://dashboard.alchemy.com/apps${NC}"
